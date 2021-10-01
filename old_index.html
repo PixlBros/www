@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>A PixlBros NFT project</title>
+  <meta name="description" content="A PixlBros NFT project.">
+  <meta name="author" content="Ava Tachi">
+
+  <meta property="og:title" content="A PixlBros NFT project">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.pixlbros.com/">
+  <meta property="og:description" content="A PixlBros NFT project.">
+  <meta property="og:image" content="/favicon/apple-icon-180x180.png">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet" />
+  <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  
+	<style>
+		#container {
+		  width: 1400px;
+		  place-items: start; /* You can change this value by selecting another option in the list */
+		  background-color: #333;
+		}
+
+		.flex {
+		  display: flex;
+		  flex-wrap: wrap;
+		}
+
+		.grid {
+		  display: grid;
+		  grid-template-columns: repeat(auto-fill, 50px);
+		}
+		
+		#container img {
+		    width: 50px;
+			height: 50px;
+		}
+		#container img:hover {
+		    width: 250px;
+			height: 250px;
+			position: relative;
+		}
+	</style>
+	<script>
+	$(function() {
+		// Handler for .ready() called.
+		var src = document.getElementById("container");
+		for(var i=0; i< 2000;i++){
+			var img = document.createElement("img");
+			img.src = "optimized-images/100x100/"+i+".png";
+			img.title = "PixlBro #"+i;
+			src.appendChild(img);
+		}
+	});
+	</script>
+
+
+</head>
+<body>  
+
+<nav>
+  <div class="navicon">
+    <div></div>
+  </div>
+
+  <a>This was</a>
+  <a>Made using</a>
+  <a>The clip-path property</a>
+  <a>Transition in</a>
+  <a>CSS only</a>
+
+</nav>
+
+<h1>Hello PixlBros</h1>
+  
+<div id="container" class="grid">
+</div>
+
+<!--
+<nft-card
+  tokenAddress="0x87b043447016509A9B994bdE2946A7AB3Ea4BC83"
+  tokenId="9"
+  network="rinkeby"
+  referrerAddress="0xBf4fA9dcA7a9C696fbab2841eA3B8239B6e56c77">
+</nft-card>
+-->
+
+
+  
+</body>
+</html>
