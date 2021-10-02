@@ -27,9 +27,63 @@ h3.bold{
   line-height: 1.2;
   font-size: calc(1.0rem + 0.6vw);
 }
-body{
-  background-color: #f9462e;
+
+
+ul {
+  list-style: none;
+  display: flex
 }
+
+.social-icon {
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 27px;
+  margin-right: 11px;
+  cursor: pointer
+}
+
+.social-twitter {
+  background-color: #55acee
+}
+
+.social-facebook {
+  background-color: #3b5999
+}
+
+.social-github {
+  background-color: #812790
+}
+
+.social-google {
+  background-color: #dd4b39
+}
+.social-opensea {
+  background-color: rgb(32, 129, 226)
+}
+
+.social-instagram {
+  background-color: #e9844e;
+}
+
+.social-icon svg {
+  transition: 0.4s all
+}
+.social-icon img {
+  transition: 0.4s all
+}
+
+.social-icon:hover svg {
+  transform: scale(1.4)
+}
+
+.social-icon:hover img {
+  transform: scale(1.4)
+}
+
 /*!
  * Bootstrap v5.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

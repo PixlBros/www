@@ -81,11 +81,69 @@
             height: 50px;
         }
 
+
+        .social-buttons .fab {
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+            width: 30px;
+            height: 30px !important;
+            line-height: 1;
+            font-size: 14px;
+            -webkit-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+            color: #fff;
+            background: none
+        }
+
+        .social-buttons:hover .fab {
+            opacity: .8
+        }
+
+        .social-buttons .fab-pinterest {
+            background-color: #cb2027
+        }
+
+        .social-buttons .fa-twitter {
+            background-color: #00aced;
+            color: #fff;
+        }
+
+        .social-buttons .fab-flickr {
+            background-color: #ff0084
+        }
+
+        .social-buttons .fab-dribbble {
+            background-color: #ea4c89
+        }
+
+        .social-buttons .fab-behance {
+            background-color: #42a9fb
+        }
+
+        .social-buttons .fab-youtube {
+            background-color: #bb0000
+        }
+
+        .social-buttons .fab-tumblr {
+            background-color: #32506d
+        }
+
+        .social-buttons .fa-github {
+            background-color: #333333;
+        }
+
+        .social-buttons .fa-instagram {
+            background: #d6249f;
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     </style>
     <script>
         $(function () {
             var src = $("#container");
-            for (var i = 0; i < 2000; i++) {
+            for (var i = 0; i < 100; i++) {
                 src.append("<img src=\"optimized-images/100x100/" + i + ".png\"" +
                     " data-toggle=\"tooltip\" " +
                     " data-html=\"true\" " +
@@ -100,13 +158,12 @@
                 html: true
             });
         });
-        $(window).resize(function () {
+        /*$(window).resize(function () {
             var width = $("#container").width();
             var itemWith = width > 650 ? (width / 12) : (width / 6);
-            $("#container img").width(itemWith);
-            $("#container img").height(itemWith);
-            $("#container").css("grid-template-columns", itemWith + "px");
-        });
+            $("#container img").css({height: itemWith, width: itemWith});
+            $("#container").css({"grid-template-columns": itemWith + "px"});
+        });*/
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SYB7KVWNS5"></script>
@@ -130,7 +187,7 @@
         <div class="container px-5">
             <h1 class="masthead-heading mb-0 pixl">PixlBros NFT</h1>
             <h2 class="masthead-subheading mb-0">Find your bro.</h2>
-            <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">Learn More</a>
+            <a class="btn btn-primary btn-xl rounded mt-5" href="#about">Learn More</a>
         </div>
     </div>
     <div class="bg-circle-1 bg-circle"></div>
@@ -152,17 +209,31 @@
                         PixlBros is a collection of 8,205 adorable and unique BROS NFTs available on the Ethereum
                         blockchain.
                         One BRO token is your ticket to future drops, events, and much much more.
-                        Join the brotherhood today.
                     </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-                    <div class="social-buttons">
-                        <button class="neo-button"><i class="fa fa-facebook fa-2x"></i></button>
-                        <button class="neo-button"><i class="fa fa-linkedin fa-2x"></i></button>
-                        <button class="neo-button"><i class="fa fa-github fa-2x"></i></button>
-                        <button class="neo-button"><i class="fa fa-instagram fa-2x"></i></button>
-                        <button class="neo-button"><i class="fa fa-twitter fa-2x"></i></button>
-                    </div>
+<section class="">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
 
+            <div class="col-lg-12">
+                <div class="d-flex flex-column align-items-center">
+                    <h4 class="mb-4 pixl">Join the brotherhood today</h4>
+                    <ul>
+                        <li>
+                            <span class="social-icon social-opensea">
+                                <img class="Image--image" src="brands/opensea-white.svg"
+                                     style="object-fit: contain; width: 26px; height: 26px;">
+                            </span>
+                        </li>
+                        <li><span class="social-icon social-instagram"><i class="fab fa-instagram"></i></span></li>
+                        <li><span class="social-icon social-twitter"><i class="fab fa-twitter"></i></span></li>
+                        <li><span class="social-icon social-github"><i class="fab fa-github"></i></span></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -188,7 +259,7 @@
 
             <div class="col-lg-4 order-lg-2">
                 <div class="p-2">
-                    <img class="img-fluid" src="optimized-images/350x350/88.png" alt="..."/>
+                    <img class="img-fluid rounded" src="optimized-images/350x350/88.png" alt="..."/>
                 </div>
                 <div class="p-2">
                     <h3 class="pixl bold">8,205 BROS</h3>
@@ -196,7 +267,7 @@
             </div>
             <div class="col-lg-4 order-lg-2">
                 <div class="p-2">
-                    <img class="img-fluid" src="optimized-images/350x350/22.png" alt="..."/>
+                    <img class="img-fluid rounded" src="optimized-images/350x350/22.png" alt="..."/>
                 </div>
                 <div class="p-2">
                     <h3 class="pixl bold">RANDOMLY GENERATED</h3>
@@ -204,7 +275,7 @@
             </div>
             <div class="col-lg-4 order-lg-2">
                 <div class="p-2">
-                    <img class="img-fluid" src="optimized-images/350x350/66.png" alt="..."/>
+                    <img class="img-fluid rounded" src="optimized-images/350x350/66.png" alt="..."/>
                 </div>
                 <div class="p-2">
                     <h3 class="pixl bold">PIXEL ART</h3>
@@ -240,7 +311,10 @@
             <div class="col-lg-12">
                 <div class="p-2">
                     <h2 class="pixl bold">\\ THE ROADMAP</h2>
-                    <p class="pixl"></p>
+                    <p class="pixl">
+                        This is just the beginning on the road to the future.
+                        One BRO token is your ticket to future drops, events, and much much more.
+                    </p>
                 </div>
             </div>
 
@@ -249,7 +323,7 @@
                     <h3 class="pixl bold">25% SOLD</h3>
                 </div>
                 <div class="p-2 pixl">
-                    BROS NFT GIVEAWAY
+                    BROS NFT GIVEAWAY / AIRDROP
                 </div>
             </div>
             <div class="col-lg-6 order-lg-2">
@@ -276,8 +350,15 @@
                     INTERACTIVE UTILITY
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
             <div class="col-lg-12">
-                <div class="p-4"></div>
+                <div class="p-4 py-5"></div>
             </div>
         </div>
     </div>
@@ -344,6 +425,31 @@
                         12. The bro code permits the entry of a girl as the new bro only if she proves to be worthy of
                         the honour and by common concession, of course.
                     </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-5 bg-dark">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+
+            <div class="col-lg-12">
+                <div class="d-flex flex-column align-items-center">
+                    <h4 class="mb-4 pixl text-white">Join the brotherhood</h4>
+                    <ul>
+                        <li>
+                            <span class="social-icon social-opensea">
+                                <img class="Image--image" src="brands/opensea-white.svg"
+                                     style="object-fit: contain; width: 26px; height: 26px;">
+                            </span>
+                        </li>
+                        <li><span class="social-icon social-instagram"><i class="fab fa-instagram"></i></span></li>
+                        <li><span class="social-icon social-twitter"><i class="fab fa-twitter"></i></span></li>
+                        <li><span class="social-icon social-github"><i class="fab fa-github"></i></span></li>
+                    </ul>
                 </div>
             </div>
         </div>
