@@ -6,14 +6,14 @@
 */
 
 @font-face {
-	font-family: FreePixel;
-	src: url('FreePixel.ttf');
+	font-family: Pixl;
+	src: url('superstar.ttf');
 }
 .pixl{
-  font-family: FreePixel;
+  font-family: Pixl;
 }
 p{
-  font-family: FreePixel;
+  font-family: Pixl;
 }
 .bold{
     font-weight: 800;
