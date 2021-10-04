@@ -5,6 +5,7 @@
   "image": "https://pixlbros.com/images/143.png",
   "seller_fee_basis_points": 250,
   "fee_recipient": "0xBf4fA9dcA7a9C696fbab2841eA3B8239B6e56c77",
+  "code": "070011030A080B080000",
   "attributes": [
     {
       "trait_type": "Background",

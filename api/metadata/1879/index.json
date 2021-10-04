@@ -5,10 +5,11 @@
   "image": "https://pixlbros.com/images/1879.png",
   "seller_fee_basis_points": 250,
   "fee_recipient": "0xBf4fA9dcA7a9C696fbab2841eA3B8239B6e56c77",
+  "code": "07000703110407040000",
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Violette"
+      "value": "Yellow"
     },
     {
       "trait_type": "Body",

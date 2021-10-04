@@ -1,0 +1,62 @@
+{
+  "name": "PixlBro #6028",
+  "description": "PixlBros is a collection of 8,205 adorable and unique BROS NFTs available on the Ethereum blockchain. One BRO token is your ticket to future drops, events, and much much more. Join the brotherhood today at www.pixlbros.com.",
+  "external_url": "https://pixlbros.com/images.html?id=6028",
+  "image": "https://pixlbros.com/images/6028.png",
+  "seller_fee_basis_points": 250,
+  "fee_recipient": "0xBf4fA9dcA7a9C696fbab2841eA3B8239B6e56c77",
+  "code": "04001008050D040D0000",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Orange"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Violete Default"
+    },
+    {
+      "trait_type": "Eye",
+      "value": "Vertical Black"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Brown Short Upper"
+    },
+    {
+      "trait_type": "Hair",
+      "value": "Short Black"
+    },
+    {
+      "trait_type": "Pants",
+      "value": "Colorful Pants"
+    },
+    {
+      "trait_type": "Shirt",
+      "value": "White Tank Top"
+    },
+    {
+      "trait_type": "Accessoires",
+      "value": "Nothing"
+    },
+    {
+      "trait_type": "Head",
+      "value": "Nothing"
+    },
+    {
+      "trait_type": "Strength",
+      "max_value": 10,
+      "value": 7
+    },
+    {
+      "trait_type": "Spirit",
+      "max_value": 10,
+      "value": 1
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Generation",
+      "value": 6
+    }
+  ]
+}

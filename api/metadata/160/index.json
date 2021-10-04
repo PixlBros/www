@@ -5,10 +5,11 @@
   "image": "https://pixlbros.com/images/160.png",
   "seller_fee_basis_points": 250,
   "fee_recipient": "0xBf4fA9dcA7a9C696fbab2841eA3B8239B6e56c77",
+  "code": "00001006080A040A0008",
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Violette"
+      "value": "Azure"
     },
     {
       "trait_type": "Body",

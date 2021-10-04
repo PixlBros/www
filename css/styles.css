@@ -15,6 +15,25 @@
 p{
   font-family: Pixl;
 }
+
+body{
+  background: rgb(249,70,46);
+  background: linear-gradient(90deg, rgba(249,70,46,1) 0%, rgba(255,106,2,1) 100%);
+}
+section div.container{
+  background: #fff2ea;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #2081e2 !important;
+  border-color: #15508b !important;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #387ce2 !important;
+  border-color: #15508b !important;
+}
 .bold{
     font-weight: 800;
 }
@@ -66,7 +85,7 @@ ul {
 }
 
 .social-instagram {
-  background-color: #e9844e;
+  background-color: #ea9410;
 }
 
 .social-icon svg {

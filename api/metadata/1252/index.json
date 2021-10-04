@@ -5,10 +5,11 @@
   "image": "https://pixlbros.com/images/1252.png",
   "seller_fee_basis_points": 250,
   "fee_recipient": "0xBf4fA9dcA7a9C696fbab2841eA3B8239B6e56c77",
+  "code": "04000A06110704070000",
   "attributes": [
     {
       "trait_type": "Background",
-      "value": "Brown"
+      "value": "Orange"
     },
     {
       "trait_type": "Body",
