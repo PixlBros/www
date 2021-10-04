@@ -102,6 +102,7 @@ function getAccount() {
                             return;
                         }
                         setAccount(acc);
+                        setMinting(false);
                         /*if (acc.length > 0) {
                             console.log(acc);
                             if (window.ethereum.networkVersion == "1")

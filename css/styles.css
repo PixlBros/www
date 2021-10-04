@@ -34,6 +34,11 @@ section div.container.light{
   background-color: #387ce2 !important;
   border-color: #15508b !important;
 }
+.input-group .btn-secondary {
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+
 .bold{
     font-weight: 800;
 }
@@ -83,7 +88,9 @@ ul {
 .social-opensea {
   background-color: rgb(32, 129, 226)
 }
-
+.social-etherscan{
+  background-color: #21325b
+}
 .social-instagram {
   background-color: #ea9410;
 }
@@ -3178,8 +3185,8 @@ textarea.form-control-lg {
 }
 .btn-secondary:disabled, .btn-secondary.disabled {
   color: #000;
-  background-color: #ff8833;
-  border-color: #dc742d;
+  background-color: #bbb2ac;
+  border-color: #918b88;
 }
 
 .btn-success {
