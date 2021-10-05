@@ -47,7 +47,7 @@
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
             crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/iframeResizer.min.js"></script>
-
+	<script type="text/javascript" src="js/CONST.js"></script>
 
     <script>
         $(function () {
@@ -86,6 +86,7 @@
             $(".pixl-box-index-inc").text(index+1);
 
             $(".pixl-box-img").empty().append("<img src=\"factory-"+index+".png\" class=\"img img-thumbnail rounded\">");
+			$(".pixl-box-opensea-link").attr("href","https://rinkeby.opensea.io/assets/"+window.FACTORY_CONTRACT_ADDRESS+"/"+index);
         });
 
 
@@ -102,7 +103,7 @@
 <section>
     <div class="container p-5">
     </div>
-    <div class="container p-5 bg-white rounded">
+    <div class="container p-5 bg-white rounded-top">
         <div class="row gx-5 align-items-center">
             <div class="col-lg-2">
                 <div class="pixl-box-img">
@@ -115,16 +116,66 @@
                     PixlBros is a collection of 8,205 adorable and unique BROS NFTs available on the Ethereum
                     blockchain.
                     One BRO token is your ticket to future drops, events, and much much more.
-                    Join the brotherhood today at www.pixlbros.com.
+                    Join the brotherhood today at <a href="www.pixlbros.com">www.pixlbros.com</a>.
                     <br/><br/>
                     Number inside: <span class="pixl-box-numbers"></span>
                 </div>
             </div>
             <div class="col-lg-3">
-                <a href="https://opensea.io/" title="Buy on OpenSea" target="_blank"><img
+                <a href="https://opensea.io/" title="Buy on OpenSea" target="_blank" class="pixl-box-opensea-link"><img
                         style="width:220px; border-radius:5px; box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);"
                         src="https://storage.googleapis.com/opensea-static/Logomark/Badge%20-%20Available%20On%20-%20Light.png"
                         alt="Available on OpenSea"/></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-5 bg-dark">
+    <div class="container px-5 bg-dark">
+        <div class="row gx-5 align-items-center">
+
+            <div class="col-lg-12">
+                <div class="d-flex flex-column align-items-center">
+                    <h4 class="mb-4 pixl text-white">Join the brotherhood</h4>
+                    <ul>
+                        <li>
+                            <a href="https://rinkeby.opensea.io/asset/0x5780bb857fcb24aad266e17f0fc7169d5aab0ee1"
+                               target="_blank" class="pixl-nft-opensea-link">
+                                <span class="social-icon social-opensea rounded">
+                                    <img class="Image--image" src="brands/opensea-white.svg"
+                                         style="object-fit: contain; width: 26px; height: 26px;"/>
+                                </span>
+                            </a>
+                        </li>
+                        <li><a href="https://instagram.com/pixlbrosnft"
+                               target="_blank">
+                            <span class="social-icon social-instagram rounded"><i class="fab fa-instagram"></i></span>
+                        </a>
+                        </li>
+                        <li><a href="https://twitter.com/pixlbrosnft"
+                               target="_blank">
+                            <span class="social-icon social-twitter rounded"><i class="fab fa-twitter"></i></span>
+                        </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/pixlbros"
+                               target="_blank">
+                                <span class="social-icon social-github rounded"><i class="fab fa-github"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://rinkeby.etherscan.io/address/0x5780bb857fcb24aad266e17f0fc7169d5aab0ee1"
+                               target="_blank" class="pixl-nft-etherscan-link">
+                            <span class="social-icon social-etherscan rounded">
+                                <img class="Image--image" src="brands/etherscan-logo-light-circle.svg"
+                                     style="object-fit: contain; width: 26px; height: 26px;"/>
+                            </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
