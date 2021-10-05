@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <title>PixlBros - COLLECTIBLE NFTs.</title>
+    <meta name="description" content="PixlBros are 8,205 unique, pixelart collectible #nfts.">
+    <meta name="author" content="Ava Tachi">
+
+    <meta property="og:title" content="PixlBros - COLLECTIBLE NFTs.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.pixlbros.com/">
+    <meta property="og:description" content="PixlBros are 8,205 unique, pixelart collectible #nfts.">
+    <meta property="og:image" content="/favicon/apple-icon-180x180.png">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"
+          rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+          rel="stylesheet"/>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet"/>
+    <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/iframeResizer.min.js"></script>
+
+
+    <script>
+        $(function () {
+            var src = $("#img-container");
+            for (var i = 0; i < 8205; i++) {
+
+                src.append("<img class\"img\" src=\"optimized-images/100x100/" + i + ".png\"" +
+                    " data-toggle=\"tooltip\" " +
+                    " title=\"Bro #" + i + "\"/>");
+            }
+
+            $('[data-toggle="tooltip"]').tooltip({
+                animated: 'fade',
+                container: 'body',
+                placement: 'bottom',
+                html: true
+            });
+
+            let index=0;
+            if (window.location.search.startsWith("?")) {
+                let search = window.location.search.substr(1);
+                if (search.startsWith("id=")) {
+                    let id = window.location.search.substr(4);
+                    const parsed = Number.parseInt(id);
+                    if (Number.isNaN(parsed)) {
+                        index=0;
+                    }
+                    index = parsed;
+                    console.log("ID:" + index);
+                }
+            }
+            //index is 0 or more
+            let numbers = 1<<index;
+            $(".pixl-box-numbers").text(numbers);
+            $(".pixl-box-index").text(index);
+            $(".pixl-box-index-inc").text(index+1);
+
+            $(".pixl-box-img").empty().append("<img src=\"factory-"+index+".png\" class=\"img img-thumbnail rounded\">");
+        });
+
+
+    </script>
+    <style>
+        #img-container .img {
+            padding: 4px;
+        }
+    </style>
+</head>
+<body>
+
+
+<section>
+    <div class="container p-5">
+    </div>
+    <div class="container p-5 bg-white rounded">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-2">
+                <div class="pixl-box-img">
+                    <img src="factory-0.png" class="img img-thumbnail rounded">
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="p-4">
+                    <h4>BOX #<span class="pixl-box-index-inc"></span> - BUY <span class="pixl-box-numbers"></span> BROS BOX</h4>
+                    PixlBros is a collection of 8,205 adorable and unique BROS NFTs available on the Ethereum
+                    blockchain.
+                    One BRO token is your ticket to future drops, events, and much much more.
+                    Join the brotherhood today at www.pixlbros.com.
+                    <br/><br/>
+                    Number inside: <span class="pixl-box-numbers"></span>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <a href="https://opensea.io/" title="Buy on OpenSea" target="_blank"><img
+                        style="width:220px; border-radius:5px; box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);"
+                        src="https://storage.googleapis.com/opensea-static/Logomark/Badge%20-%20Available%20On%20-%20Light.png"
+                        alt="Available on OpenSea"/></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
