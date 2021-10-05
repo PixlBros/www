@@ -1,6 +1,8 @@
 {
   "name": "PixlBros NFT",
   "description": "PixlBros is a collection of 8,205 adorable and unique BROS NFTs available on the Ethereum blockchain. One BRO token is your ticket to future drops, events, and much much more. Join the brotherhood today at www.pixlbros.com.",
-  "external_url": "https://github.com/pixlbros/",
-  "image": "https://pixlbros.com/image.png"
+  "external_url": "https://pixlbros.com/",
+  "image": "https://pixlbros.com/animation.gif",
+  "seller_fee_basis_points": 500,
+  "fee_recipient": "0xBf4fA9dcA7a9C696fbab2841eA3B8239B6e56c77"
 }
