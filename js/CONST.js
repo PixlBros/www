@@ -1,7 +1,7 @@
 window.OWNER_ADDRESS = "0xBf4fA9dcA7a9C696fbab2841eA3B8239B6e56c77";
-window.NFT_CONTRACT_ADDRESS = "0x1C360023E9F5c12A044b22f7AC2A9Daea10d60e6";
+window.NFT_CONTRACT_ADDRESS = "0x70d32faeaa5d78c69f81be6dea581b45f74ca931";
 window.FACTORY_CONTRACT_ADDRESS = "0xaFc7170D8cb3B14894CDB939Bb25eED429E0738A";
-window.NETWORK = "rinkeby"
+window.NETWORK = "live"
 
 $(function () {
     $(".pixl-owner-text").text(window.OWNER_ADDRESS);
@@ -14,7 +14,7 @@ $(function () {
         $(".pixl-nft-etherscan-link").attr("href", "https://rinkeby.etherscan.io/address/" + window.NFT_CONTRACT_ADDRESS);
         $(".pixl-factory-etherscan-link").attr("href", "https://rinkeby.etherscan.io/address/" + window.FACTORY_CONTRACT_ADDRESS);
     } else {
-        $(".pixl-nft-opensea-link").attr("href", "http://www.opensea.io");
+        $(".pixl-nft-opensea-link").attr("href", "https://opensea.io/collection/pixlbros");
         $(".pixl-nft-etherscan-link").attr("href", "https://etherscan.io/address/" + window.NFT_CONTRACT_ADDRESS);
         $(".pixl-factory-etherscan-link").attr("href", "https://etherscan.io/address/" + window.FACTORY_CONTRACT_ADDRESS);
     }
