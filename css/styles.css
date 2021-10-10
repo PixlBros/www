@@ -6,14 +6,22 @@
 */
 
 @font-face {
-	font-family: Pixl;
+	font-family: PixlHeader;
 	src: url('superstar.ttf');
 }
+@font-face {
+	font-family: Pixl;
+	src: url('gemunu-libre.regular.ttf');
+}
+
 .pixl{
   font-family: Pixl;
 }
 p{
   font-family: Pixl;
+}
+h1.pixl,h2.pixl,h3.pixl,h4.pixl,h5.pixl{
+	font-family: PixlHeader;
 }
 
 body{
