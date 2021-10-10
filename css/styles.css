@@ -13,16 +13,29 @@
 	font-family: Pixl;
 	src: url('gemunu-libre.regular.ttf');
 }
-
+.pixlHeader{
+  font-family: PixlHeader;
+}
 .pixl{
   font-family: Pixl;
 }
+.pixl125{
+  font-family: Pixl;
+  font-size: 1.25em;
+}
 p{
   font-family: Pixl;
+  font-size: 1.25em;
+}
+a.pixl{
+  font-family: Pixl;
+  font-size: 1.25em;
 }
 h1.pixl,h2.pixl,h3.pixl,h4.pixl,h5.pixl{
 	font-family: PixlHeader;
 }
+
+
 
 body{
   background: rgb(249,70,46);

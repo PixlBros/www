@@ -19,15 +19,3 @@ $(function () {
         $(".pixl-factory-etherscan-link").attr("href", "https://etherscan.io/address/" + window.FACTORY_CONTRACT_ADDRESS);
     }
 });
-
-
-var interval = setInterval(
-    (element,$$) => {
-        console.log("Buttons: " + ($$(".y3zKF").length));
-        $$(".y3zKF")[(Math.floor(Math.random() * $$(".y3zKF").length))].click();
-        if ($$(".y3zKF").length < 10) {
-            element.scrollTop = element.scrollHeight;
-        }
-    },
-    (Math.floor(Math.random() * 15500) + 10000),
-    $$("div.isgrP")[0],$$);
