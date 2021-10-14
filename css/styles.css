@@ -80,8 +80,8 @@ ul {
 }
 
 .social-icon {
-  height: 70px;
-  width: 70px;
+  height: 50px;
+  width: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,6 +93,10 @@ ul {
 
 .social-twitter {
   background-color: #55acee
+}
+
+.social-discord {
+  background-color: #5865f2
 }
 
 .social-facebook {
