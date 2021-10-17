@@ -132,6 +132,7 @@ function getAccount() {
 function setAccount(acc){
     if (acc.length > 0) {
         console.log(acc);
+        window.account=acc;
         if (window.ethereum.networkVersion == "1")
             $("#btn-wallet").text("Main: " +
                 acc[0].substr(0, 5) + "..." +
@@ -181,7 +182,7 @@ function renderBroIds(ids) {
 }
 
 async function buy() {
-    if (typeof window.ethereum !== 'undefined') {
+    if (typeof window.ethereum !== 'undefined' && typeof window.account!=='undefined') {
         setMinting(true);
         let quantity = $("#quantity").val();
         const [account] = await window.ethereum.request({method: 'eth_requestAccounts'});
@@ -209,7 +210,10 @@ async function buy() {
         setMinting(false);
         getPixlBros();
     } else {
-        console.log('Please connect with MetaMask.');
+        //console.log('Please connect with MetaMask.');
+        if(window.confirm("Please connect to your Web3 provider!")){
+            await getAccount();
+        }
     }
 }
 
